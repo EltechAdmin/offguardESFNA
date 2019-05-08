@@ -32,14 +32,14 @@ text-align: center;
     margin: 0;
     /* background: yellow; */
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     /* z-index: 10; */
     /* padding-top: 20px; */
     /* padding-bottom: 20px; */
-        color: black;
+        color: white;
 }
 
 
@@ -241,7 +241,14 @@ body {
   }
 
 }
+/*//////////////////////////////////////////////////indecators////////////////////////////////////*/
+.carousel-indicators{
+    position: relative;
+    /* margin-top: 1%; */
+    top: 350px;
+   
 
+}
 
 
 
@@ -274,8 +281,6 @@ body {
 }
 
 .brk-btn {
-    top:20px;
-    margin-left: 40%;
     position: relative;
     background: none;
     color: #1b1d1d;

@@ -9,15 +9,15 @@
   <meta name="googlebot" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet' type='text/css' href='css/sections.css'/>
+  <link rel='stylesheet' type='text/css' href='css/bootstrap.css'/>
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+     <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
       <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
   <style id="compiled-css" type="text/css">
       .carousel-item {
-  height: 100vh;
   min-height: 350px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -105,7 +105,7 @@ function topFunction() {
         </div>
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/s31.png')">
+      <div class="carousel-item" style="background-image: url('https://binaryfortressdownloads.com/Download/WPF/Images/25310/WallpaperFusion-gentle-hills-1680x480.jpg')">
         <div class="bannerinfo">
           <h2 class="display-4">Second Slide</h2>
           <p class="lead">This is a description for the second slide.</p>
@@ -140,7 +140,7 @@ function topFunction() {
 <!-- Page Content -->
 <section class="py-5">
   <div class="container">
-        <a href="#" class="brk-btn">Get Started</a>
+        <button href="#" class="brk-btn">Get Started</button>
     <h1 class="section1">Start  your order now</h1>
     <p class="lead">Get your picture taken with our professional photographers, select a background/filter and choose an item you would like to see your face on. follow our easy 3 step process to make your slection and place an order</a>!</p>
   </div>

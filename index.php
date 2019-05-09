@@ -87,8 +87,11 @@ function topFunction() {
     </div>
   </div>
 </nav>
-    <h1 class="sectionHeader">How it works</h1>
+  
 <header>
+  <div class="esfna" >
+    <img src="img/esfnaLogo.png" alt="logo" class="esfnalogo" >
+     </div>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -98,31 +101,31 @@ function topFunction() {
     </ol>
     <div class="banner" role="listbox">
       <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
+      <div class="carousel-item active" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/s1.png')">
         <div class="bannerinfo">
           <h2 class="display-4">ESFNA 19 Photo Booth</h2>
-          <p class="lead">This is a description for the first slide.</p>
+          <p class="lead">Creating a memory of a life time.</p>
         </div>
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('https://binaryfortressdownloads.com/Download/WPF/Images/25310/WallpaperFusion-gentle-hills-1680x480.jpg')">
+      <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/s2.png')">
         <div class="bannerinfo">
-          <h2 class="display-4">Second Slide</h2>
-          <p class="lead">This is a description for the second slide.</p>
+          <h2 class="display-4">Smile For The Camera</h2>
+          <p class="lead">The fun part!! Get your photo taken in front out Green screen.</p>
         </div>
       </div>
       <!-- Slide Three - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/sr2.jpg')">
         <div class="bannerinfo">
-          <h2 class="display-4">Third Slide</h2>
-          <p class="lead">This is a description for the third slide.</p>
+          <h2 class="display-4">Any Background You Want</h2>
+          <p class="lead">Inclusing any picture you want. Pick from our pre-selected or email us a picture you would like us to use.</p>
         </div>
       </div>
   <!-- Slide four - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/sr3.png')">
         <div class="bannerinfo">
-          <h2 class="display-4">Forth Slide</h2>
-          <p class="lead">This is a description for the third slide.</p>
+          <h2 class="display-4">Various Items</h2>
+          <p class="lead">Select one of our items to print your face on.</p>
         </div>
       </div>
     </div>
@@ -140,11 +143,21 @@ function topFunction() {
 <!-- Page Content -->
 <section class="py-5">
   <div class="container">
-        <button href="#" class="brk-btn">Get Started</button>
     <h1 class="section1">Start  your order now</h1>
+    <p class="lead">Click 'Get Started' below and follow the instructions to place your order to create a life time memory of this historical event.</a>!</p>
+          <button href="#" class="brk-btn">Get Started</button>
+  </div>
+
+</section>
+
+
+<section class="py-5">
+  <div class="container">
+    <h1 class="section1">How it works</h1>
     <p class="lead">Get your picture taken with our professional photographers, select a background/filter and choose an item you would like to see your face on. follow our easy 3 step process to make your slection and place an order</a>!</p>
   </div>
 </section>
+
 
     <footer class="footer-distributed">
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>

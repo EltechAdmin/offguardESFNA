@@ -24,8 +24,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-      background-repeat: no-repeat;
-    background-size: 100% 120%;
+    /*  background-repeat: no-repeat;
+    background-size: 100% 120%;*/
     min-height: 100%
 }
 

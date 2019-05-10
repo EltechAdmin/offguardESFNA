@@ -18,12 +18,15 @@
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
   <style id="compiled-css" type="text/css">
       .carousel-item {
-  min-height: 350px;
+
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+      background-repeat: no-repeat;
+    background-size: 100% 120%;
+    min-height: 100%
 }
 
   </style>
@@ -87,11 +90,8 @@ function topFunction() {
     </div>
   </div>
 </nav>
-  
 <header>
-  <div class="esfna" >
-    <img src="img/esfnaLogo.png" alt="logo" class="esfnalogo" >
-     </div>
+  <h1 class="sectionHeader">ESFNA Photo Booth</h1>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -103,8 +103,8 @@ function topFunction() {
       <!-- Slide One - Set the background image for this slide in the line below -->
       <div class="carousel-item active" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/s1.png')">
         <div class="bannerinfo">
-          <h2 class="display-4">ESFNA 19 Photo Booth</h2>
-          <p class="lead">Creating a memory of a life time.</p>
+          <h2 class="display-4">Creating unforgettable memories</h2>
+          <p class="lead">Creating a custom printed memory using everyday itmes</p>
         </div>
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
@@ -139,7 +139,9 @@ function topFunction() {
         </a>
   </div>
 </header>
-
+    <div class="esfna" >
+    <img src="img/esfnaLogo.png" alt="logo" class="esfnalogo" >
+     </div>
 <!-- Page Content -->
 <section class="py-5">
   <div class="container">
@@ -154,9 +156,41 @@ function topFunction() {
 <section class="py-5">
   <div class="container">
     <h1 class="section1">How it works</h1>
-    <p class="lead">Get your picture taken with our professional photographers, select a background/filter and choose an item you would like to see your face on. follow our easy 3 step process to make your slection and place an order</a>!</p>
+    <p class="lead">Get your picture taken with our professional photographers, select a background/filter and choose an item you would like to see your face on. follow our easy 3 step process to make your selection and place an order</a>!</p>
   </div>
 </section>
+
+<div class="row">
+<div class="col-sm-12 col-md-4 col-lg-4">
+<div class="iq-Work-box text-center">
+<div class="Work-icon">
+<i aria-hidden="true" class="step1"></i>
+<div class="line"></div>
+</div>
+<h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Say Cheese</h4>
+<p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text,</p>
+</div>
+</div>
+<div class="col-sm-12 col-md-4 col-lg-4 re-mt-30">
+<div class="iq-Work-box text-center">
+<div class="Work-icon">
+<i aria-hidden="true" class="step2"></i>
+<div class="line"></div>
+</div>
+<h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Customize Your Order</h4>
+<p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text,</p>
+</div>
+</div>
+<div class="col-sm-12 col-md-4 col-lg-4 re-mt-30">
+<div class="iq-Work-box text-center">
+<div class="Work-icon">
+<i aria-hidden="true" class="step3"></i>
+</div>
+<h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Pick Up Your Memory</h4>
+<p>Dummy text of the printing and typesetting Ipsum is simply d industry. Lorem Ipsum has been the industry's standard dummy text,</p>
+</div>
+</div>
+</div>
 
 
     <footer class="footer-distributed">

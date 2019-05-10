@@ -1,6 +1,6 @@
-.body{
-
-  width: 100%;
+html, body {
+    margin: 0;
+    height: 100%;
 }
 
 .section1 {
@@ -263,12 +263,13 @@ body {
 body {
 
   flex-direction: column;
-  height: 93vh;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   background: #222;
   color: #eee;
   font-family: "Dosis", sans-serif;
+      width: 100%;
 }
 
 .underlined-a {
@@ -353,9 +354,12 @@ margin-top: 1.75%;
 
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-.row {
-    margin-left: -15px;
-    margin-right: -15px;
+.howitworks {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
 }
 .col-sm-12 {
     width: 100%;

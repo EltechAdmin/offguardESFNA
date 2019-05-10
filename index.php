@@ -160,7 +160,7 @@ function topFunction() {
   </div>
 </section>
 
-<div class="row">
+<div class="howitworks">
 <div class="col-sm-12 col-md-4 col-lg-4">
 <div class="iq-Work-box text-center">
 <div class="Work-icon">

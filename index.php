@@ -161,16 +161,6 @@ function topFunction() {
 </section>
 
 <div class="howitworks">
-<div class="col-sm-12 col-md-4 col-lg-4">
-<div class="iq-Work-box text-center">
-<div class="Work-icon">
-<i aria-hidden="true" class="step1"></i>
-<div class="line"></div>
-</div>
-<h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Say Cheese</h4>
-<p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text,</p>
-</div>
-</div>
 <div class="col-sm-12 col-md-4 col-lg-4 re-mt-30">
 <div class="iq-Work-box text-center">
 <div class="Work-icon">
@@ -179,6 +169,16 @@ function topFunction() {
 </div>
 <h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Customize Your Order</h4>
 <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text,</p>
+</div>
+</div>  
+<div class="col-sm-12 col-md-4 col-lg-4">
+<div class="iq-Work-box text-center">
+<div class="Work-icon">
+<i aria-hidden="true" class="step1"></i>
+<div class="line"></div>
+</div>
+<h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Say Cheese</h4>
+<p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text,</p>
 </div>
 </div>
 <div class="col-sm-12 col-md-4 col-lg-4 re-mt-30">

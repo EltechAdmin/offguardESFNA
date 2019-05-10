@@ -85,9 +85,8 @@ body {
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
-
   padding: 55px 50px;
-  margin-top: 80px;
+  /*margin-top: 80px;*/
 }
 
 .footer-distributed .footer-left,
@@ -249,8 +248,7 @@ body {
 /*//////////////////////////////////////////////////indecators////////////////////////////////////*/
 .carousel-indicators{
     position: relative;
-    /* margin-top: 1%; */
-    top: 350px;
+    top: 410px;
    
 
 }
@@ -359,6 +357,8 @@ margin-top: 1.75%;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    background-color: lightblue;
+    padding: 5%;
 
 }
 .col-sm-12 {
@@ -476,3 +476,13 @@ h4 {
     position: relative;
     left: 12%;
 }
+
+
+
+
+/*
+    background-image: url(https://s3.us-east-2.amazonaws.com/offguard/banner.png);
+    background-repeat: no-repeat;
+
+
+*/

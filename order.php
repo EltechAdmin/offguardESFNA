@@ -7,13 +7,14 @@ $ref=@$_SERVER[HTTP_REFERER];
 $agent=@$_SERVER[HTTP_USER_AGENT];
 $ip=@$_SERVER['REMOTE_ADDR'];
 $tracking_page_name2 = $_SERVER["SCRIPT_NAME"];
+//$orderNumberr = $_POST['orderNumber'];
 $orderNumber = $_SERVER["REQUEST_TIME"];
 
-if(strlen($ref) > 2 and !(stristr($ref,"localhost"))){  // exclude referrer from your own site. 
-$strSQL = "INSERT INTO track( ref, agent, ip, tracking_page_name) VALUES (:ref,:agent,:ip,:tracking_page_name)";
+//if(strlen($ref) > 2 and !(stristr($ref,"localhost"))){  // exclude referrer from your own site. 
+$strSQL = "INSERT INTO new_order( orderNumber, ref, agent, ip, tracking_page_name) VALUES (:orderNumber,:ref,:agent,:ip,:tracking_page_name)";
 
 $sql=$dbo->prepare($strSQL);
-
+$sql->bindParam(':orderNumber',$orderNumber);
 $sql->bindParam(':ref',$ref);
 $sql->bindParam(':agent',$agent);
 $sql->bindParam(':ip',$ip);
@@ -30,10 +31,9 @@ else{
 //echo print_r($sql->errorInfo()); 
 }
 ///////////// inserted details 
-}
+//}
 
 ?>
-
 
 
 <!DOCTYPE html>
@@ -53,20 +53,6 @@ else{
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-  <style id="compiled-css" type="text/css">
-      .carousel-item {
-
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    /*  background-repeat: no-repeat;
-    background-size: 100% 120%;*/
-    min-height: 100%
-}
-
-  </style>
 
 
   <!-- TODO: Missing CoffeeScript 2 -->
@@ -110,7 +96,7 @@ function topFunction() {
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home
+          <a class="nav-link" href="index.php">Home
                 <span class="sr-only">(current)</span>
               </a>
         </li>
@@ -128,112 +114,20 @@ function topFunction() {
   </div>
 </nav>
 <header>
-  <h1 class="sectionHeader">ESFNA Photo Booth</h1>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    </ol>
-    <div class="banner" role="listbox">
-      <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/s1.png')">
-        <div class="bannerinfo">
-          <h2 class="display-4">Creating unforgettable memories</h2>
-          <p class="lead">Creating a custom printed memory using everyday itmes</p>
-        </div>
-      </div>
-      <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/s2.png')">
-        <div class="bannerinfo">
-          <h2 class="display-4">Smile For The Camera</h2>
-          <p class="lead">The fun part!! Get your photo taken in front out Green screen.</p>
-        </div>
-      </div>
-      <!-- Slide Three - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/sr2.jpg')">
-        <div class="bannerinfo">
-          <h2 class="display-4">Any Background You Want</h2>
-          <p class="lead">Inclusing any picture you want. Pick from our pre-selected or email us a picture you would like us to use.</p>
-        </div>
-      </div>
-  <!-- Slide four - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/sr3.png')">
-        <div class="bannerinfo">
-          <h2 class="display-4">Various Items</h2>
-          <p class="lead">Select one of our items to print your face on.</p>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-  </div>
+  <h1 class="sectionHeader">Step 1</h1>
+    <h2 class="sectionHeader">Order number <?php echo $orderNumber;?></h2>
 </header>
-    <div class="esfna" >
-    <img src="img/esfnaLogo.png" alt="logo" class="esfnalogo" >
-     </div>
 <!-- Page Content -->
 <section class="py-5">
+<section class="py-5">
   <div class="container">
-    <h1 class="section1">Start  your order now</h1>
     <p class="lead">Click 'Get Started' below and follow the instructions to place your order to create a life time memory of this historical event.</a>!</p>
-          <button onclick="location.href ='order.php'" class="brk-btn">Get Started</button>
+        
   </div>
 
 </section>
 
 
-<section class="py-5">
-  <div class="container">
-    <h1 class="section1">How it works</h1>
-    <p class="lead">Get your picture taken with our professional photographers, select a background/filter and choose an item you would like to see your face on. follow our easy 3 step process to make your selection and place an order</a>!</p>
-  </div>
-</section>
-
-<div class="howitworks">
-<div class="col-sm-12 col-md-4 col-lg-4 re-mt-30">
-<div class="iq-Work-box text-center">
-<div class="Work-icon">
-<i aria-hidden="true" class="step2"></i>
-<div class="line"></div>
-</div>
-<h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Customize Your Order</h4>
-<p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text,</p>
-</div>
-</div>  
-<div class="col-sm-12 col-md-4 col-lg-4">
-<div class="iq-Work-box text-center">
-<div class="Work-icon">
-<i aria-hidden="true" class="step1"></i>
-<div class="line"></div>
-</div>
-<h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Say Cheese</h4>
-<p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text,</p>
-</div>
-</div>
-<div class="col-sm-12 col-md-4 col-lg-4 re-mt-30">
-<div class="iq-Work-box text-center">
-<div class="Work-icon">
-<i aria-hidden="true" class="step3"></i>
-</div>
-<h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Pick Up Your Memory</h4>
-<p>Dummy text of the printing and typesetting Ipsum is simply d industry. Lorem Ipsum has been the industry's standard dummy text,</p>
-</div>
-</div>
-</div>
-<section class="py-5">
-  <div class="container">
-    <h2 class="boothlocation">Booth location</h2>
-    <p class="lead">####</a></p>
-  </div>
-</section>
     <footer class="footer-distributed">
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
       <div class="footer-left">

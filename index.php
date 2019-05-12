@@ -1,6 +1,8 @@
 <?php
 //include file which will make mysqli connection, this functionality will likely need improvements
-include_once('/php/db.php');
+//include_once('/php/db.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/offguard/php/db.php');
+
 //$sql = get_mysqli_connection();
 
 $ref=@$_SERVER[HTTP_REFERER];
@@ -9,7 +11,7 @@ $ip=@$_SERVER['REMOTE_ADDR'];
 $tracking_page_name2 = $_SERVER["SCRIPT_NAME"];
 $orderNumber = $_SERVER["REQUEST_TIME"];
 
-if(strlen($ref) > 2 and !(stristr($ref,"localhost"))){  // exclude referrer from your own site. 
+//if(strlen($ref) > 2 and !(stristr($ref,"localhost"))){  // exclude referrer from your own site. 
 $strSQL = "INSERT INTO track( ref, agent, ip, tracking_page_name) VALUES (:ref,:agent,:ip,:tracking_page_name)";
 
 $sql=$dbo->prepare($strSQL);
@@ -30,7 +32,7 @@ else{
 //echo print_r($sql->errorInfo()); 
 }
 ///////////// inserted details 
-}
+//}
 
 ?>
 
@@ -230,8 +232,8 @@ function topFunction() {
 </div>
 <section class="py-5">
   <div class="container">
-    <h2 class="boothlocation">Booth location</h2>
-    <p class="lead">####</a></p>
+    <h2 class="boothlocation">Booth Location</h2>
+    <p class="lead">######</a></p>
   </div>
 </section>
     <footer class="footer-distributed">

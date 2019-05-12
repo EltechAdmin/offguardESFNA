@@ -1,7 +1,7 @@
 <?php
 //include file which will make mysqli connection, this functionality will likely need improvements
-include_once('/php/db.php');
-//$sql = get_mysqli_connection();
+//include_once('/php/db.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/offguard/php/db.php');
 
 $ref=@$_SERVER[HTTP_REFERER];
 $agent=@$_SERVER[HTTP_USER_AGENT];
@@ -10,7 +10,6 @@ $tracking_page_name2 = $_SERVER["SCRIPT_NAME"];
 //$orderNumberr = $_POST['orderNumber'];
 $orderNumber = $_SERVER["REQUEST_TIME"];
 
-//if(strlen($ref) > 2 and !(stristr($ref,"localhost"))){  // exclude referrer from your own site. 
 $strSQL = "INSERT INTO new_order( orderNumber, ref, agent, ip, tracking_page_name) VALUES (:orderNumber,:ref,:agent,:ip,:tracking_page_name)";
 
 $sql=$dbo->prepare($strSQL);
@@ -19,7 +18,6 @@ $sql->bindParam(':ref',$ref);
 $sql->bindParam(':agent',$agent);
 $sql->bindParam(':ip',$ip);
 $sql->bindParam(':tracking_page_name',$tracking_page_name2);
-
 
 if($sql->execute()){
 // Part of the code to execute after successful execution of query
@@ -30,8 +28,7 @@ else{
 // Part of the code to execute if query fails ///
 //echo print_r($sql->errorInfo()); 
 }
-///////////// inserted details 
-//}
+
 
 ?>
 
@@ -45,6 +42,7 @@ else{
   <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' type='text/css' href='css/orders.css'/>
   <link rel='stylesheet' type='text/css' href='css/sections.css'/>
   <link rel='stylesheet' type='text/css' href='css/bootstrap.css'/>
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -114,14 +112,93 @@ function topFunction() {
   </div>
 </nav>
 <header>
-  <h1 class="sectionHeader">Step 1</h1>
-    <h2 class="sectionHeader">Order number <?php echo $orderNumber;?></h2>
+  <div class="orderDiv">
+  <h1 class="sectionHeader">Customize Your Order Below</h1>
+  <!--  <h2 class="sectionHeader">Order number <?php echo $orderNumber;?></h2> -->
+</div>
 </header>
+
 <!-- Page Content -->
-<section class="py-5">
-<section class="py-5">
+
+<section class="textdivOrders">
   <div class="container">
-    <p class="lead">Click 'Get Started' below and follow the instructions to place your order to create a life time memory of this historical event.</a>!</p>
+    <iframe
+      id="JotFormIFrame-91310466825153"
+      title="Uniform Order Form"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/91310466825153"
+      frameborder="0"
+      style="width: 1px;
+      min-width: 100%;
+      height:539px;
+      border:none;
+      margin-top: 6px;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+      var ifr = document.getElementById("JotFormIFrame-91310466825153");
+      if(window.location.href && window.location.href.indexOf("?") > -1) {
+        var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
+        if(ifr && get.length > 0) {
+          var src = ifr.src;
+          src = src.indexOf("?") > -1 ? src + "&" + get : src  + "?" + get;
+          ifr.src = src;
+        }
+      }
+      window.handleIFrameMessage = function(e) {
+        if (typeof e.data === 'object') { return; }
+        var args = e.data.split(":");
+        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+        if (!iframe) { return; }
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
+            }
+            break;
+          case "reloadPage":
+            window.location.reload();
+            break;
+          case "loadScript":
+            var src = args[1];
+            if (args.length > 3) {
+                src = args[1] + ':' + args[2];
+            }
+            var script = document.createElement('script');
+            script.src = src;
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+            break;
+          case "exitFullscreen":
+            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+            break;
+        }
+        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+        }
+      };
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
+      </script>
         
   </div>
 

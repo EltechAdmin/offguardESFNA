@@ -2,7 +2,7 @@
 $host_name = "localhost";
 $database = "offguard"; // Change your database name
 $username = "root";          // Your database user id 
-$password = "";          // Your password
+$password = "password";          // Your password
 
 //////// Do not Edit below /////////
 try {

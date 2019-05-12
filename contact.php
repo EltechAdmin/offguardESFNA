@@ -1,38 +1,3 @@
-<?php
-//include file which will make mysqli connection, this functionality will likely need improvements
-//include_once('/php/db.php');
-include_once($_SERVER['DOCUMENT_ROOT'].'/offguard/php/db.php');
-
-$ref=@$_SERVER[HTTP_REFERER];
-$agent=@$_SERVER[HTTP_USER_AGENT];
-$ip=@$_SERVER['REMOTE_ADDR'];
-$tracking_page_name2 = $_SERVER["SCRIPT_NAME"];
-//$orderNumberr = $_POST['orderNumber'];
-$orderNumber = $_SERVER["REQUEST_TIME"];
-
-$strSQL = "INSERT INTO new_order( orderNumber, ref, agent, ip, tracking_page_name) VALUES (:orderNumber,:ref,:agent,:ip,:tracking_page_name)";
-
-$sql=$dbo->prepare($strSQL);
-$sql->bindParam(':orderNumber',$orderNumber);
-$sql->bindParam(':ref',$ref);
-$sql->bindParam(':agent',$agent);
-$sql->bindParam(':ip',$ip);
-$sql->bindParam(':tracking_page_name',$tracking_page_name2);
-
-if($sql->execute()){
-// Part of the code to execute after successful execution of query
-
-//echo " Success ";
-}
-else{ 
-// Part of the code to execute if query fails ///
-//echo print_r($sql->errorInfo()); 
-}
-
-
-?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -113,7 +78,7 @@ function topFunction() {
 </nav>
 <header>
   <div class="orderDiv">
-  <h1 class="sectionHeader">Customize Your Order Below</h1>
+  <h1 class="sectionHeader">Contact Us Below</h1>
   <!--  <h2 class="sectionHeader">Order number <?php echo $orderNumber;?></h2> -->
 </div>
 </header>
@@ -122,25 +87,25 @@ function topFunction() {
 
 <section class="textdivOrders">
   <div class="container">
+
     <iframe
-      id="JotFormIFrame-91310466825153"
-      title="Uniform Order Form"
+      id="JotFormIFrame-91315727198161"
+      title="Contact Us"
       onload="window.parent.scrollTo(0,0)"
       allowtransparency="true"
       allowfullscreen="true"
       allow="geolocation; microphone; camera"
-      src="https://form.jotform.com/91310466825153"
+      src="https://form.jotform.com/91315727198161"
       frameborder="0"
       style="width: 1px;
       min-width: 100%;
       height:539px;
-      border:none;
-      margin-top: 6px;"
+      border:none;"
       scrolling="no"
     >
     </iframe>
     <script type="text/javascript">
-      var ifr = document.getElementById("JotFormIFrame-91310466825153");
+      var ifr = document.getElementById("JotFormIFrame-91315727198161");
       if(window.location.href && window.location.href.indexOf("?") > -1) {
         var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
         if(ifr && get.length > 0) {
@@ -199,6 +164,7 @@ function topFunction() {
         window.attachEvent("onmessage", handleIFrameMessage);
       }
       </script>
+ 
         
   </div>
 

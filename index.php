@@ -123,7 +123,7 @@ function topFunction() {
           <a class="nav-link" href="#">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="contact.php">Contact</a>
         </li>
       </ul>
     </div>
@@ -142,22 +142,22 @@ function topFunction() {
       <!-- Slide One - Set the background image for this slide in the line below -->
       <div class="carousel-item active" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/s1.png')">
         <div class="bannerinfo">
-          <h2 class="display-4">Creating unforgettable memories</h2>
-          <p class="lead">Creating a custom printed memory using everyday itmes</p>
+          <h2 class="display-4">Share and Create an Everlasting Memory With Us </h2>
+          <p class="lead">Creating a custom printed memory using an everyday itmes of your choice </p>
         </div>
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/s2.png')">
         <div class="bannerinfo">
-          <h2 class="display-4">Smile For The Camera</h2>
-          <p class="lead">The fun part!! Get your photo taken in front out Green screen.</p>
+          <h2 class="display-4">Finding Creative Ways To Make You Smile</h2>
+          <p class="lead"> Get your photos taken in-front of a Green screen background </p>
         </div>
       </div>
-      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <!-- Slide Three - Set the background image for this slide in the line below   -->
       <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/sr2.jpg')">
         <div class="bannerinfo">
-          <h2 class="display-4">Any Background You Want</h2>
-          <p class="lead">Inclusing any picture you want. Pick from our pre-selected or email us a picture you would like us to use.</p>
+          <h2 class="display-4"> With a Multiple Backgrounds </h2>
+          <p class="lead">Including any prefered background of your choice.</p>
         </div>
       </div>
   <!-- Slide four - Set the background image for this slide in the line below -->
@@ -207,7 +207,7 @@ function topFunction() {
 <div class="line"></div>
 </div>
 <h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Customize Your Order</h4>
-<p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text,</p>
+<p> Pick from our pre-selected backgrounds or email us a background you would like us to use at extra cost.<br> You Can Have Your Order Custom Made On a Photo Paper, Shirt,Hat and More. </p>
 </div>
 </div>  
 <div class="col-sm-12 col-md-4 col-lg-4">
@@ -217,7 +217,7 @@ function topFunction() {
 <div class="line"></div>
 </div>
 <h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Say Cheese</h4>
-<p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text,</p>
+<p> Gather Your Loved Ones and Get Your Photos Taken In-Front Of Our Lighted Green Screen and Share The Moment Through Our Lense. </p>
 </div>
 </div>
 <div class="col-sm-12 col-md-4 col-lg-4 re-mt-30">
@@ -226,7 +226,7 @@ function topFunction() {
 <i aria-hidden="true" class="step3"></i>
 </div>
 <h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Pick Up Your Memory</h4>
-<p>Dummy text of the printing and typesetting Ipsum is simply d industry. Lorem Ipsum has been the industry's standard dummy text,</p>
+<p> You don't want to stand around and wait? well, you don't have to. You Can Recieve a Text Notification When Your ORDER is ready.</p>
 </div>
 </div>
 </div>

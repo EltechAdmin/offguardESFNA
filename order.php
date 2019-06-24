@@ -1,7 +1,7 @@
 <?php
 //include file which will make mysqli connection, this functionality will likely need improvements
-//include_once('/php/db.php');
-include_once($_SERVER['DOCUMENT_ROOT'].'/offguard/php/db.php');
+include_once('/php/db.php');
+//include_once($_SERVER['DOCUMENT_ROOT'].'/offguard/php/db.php');
 
 $ref=@$_SERVER[HTTP_REFERER];
 $agent=@$_SERVER[HTTP_USER_AGENT];
@@ -37,7 +37,7 @@ else{
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Offguard | ESFNA 19</title>
+  <title>ethimoX</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex, nofollow">
@@ -87,7 +87,7 @@ function topFunction() {
     <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.php">OFFGUARD PICTURES</a>
+    <a class="navbar-brand" href="index.php">ethimoX</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

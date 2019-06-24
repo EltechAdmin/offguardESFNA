@@ -1,7 +1,7 @@
 <?php
 //include file which will make mysqli connection, this functionality will likely need improvements
-//include_once('/php/db.php');
-include_once($_SERVER['DOCUMENT_ROOT'].'/offguard/php/db.php');
+include_once('/php/db.php');
+//include_once($_SERVER['DOCUMENT_ROOT'].'/offguard/php/db.php');
 
 //$sql = get_mysqli_connection();
 
@@ -42,7 +42,7 @@ else{
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Offguard | ESFNA 19</title>
+  <title>ethimoX</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex, nofollow">
@@ -105,7 +105,7 @@ function topFunction() {
     <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.php">OFFGUARD PICTURES</a>
+    <a class="navbar-brand" href="index.php">ethimoX</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -117,11 +117,11 @@ function topFunction() {
               </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Products</a>
+          <a class="nav-link" href="#">Store (Closed)</a>
         </li>
-        <li class="nav-item">
+       <!-- <li class="nav-item">
           <a class="nav-link" href="#">Services</a>
-        </li>
+        </li>-->
         <li class="nav-item">
           <a class="nav-link" href="contact.php">Contact</a>
         </li>
@@ -130,7 +130,7 @@ function topFunction() {
   </div>
 </nav>
 <header>
-  <h1 class="sectionHeader">ESFNA Photo Booth</h1>
+  <h1 class="sectionHeader">Any Design you want!!</h1>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -186,7 +186,7 @@ function topFunction() {
   <div class="container">
     <h1 class="section1">Start  your order now</h1>
     <p class="lead">Click 'Get Started' below and follow the instructions to place your order to create a life time memory of this historical event.</a>!</p>
-          <button onclick="location.href ='order.php'" class="brk-btn">Get Started</button>
+          <button disabled="disabled" onclick="location.href ='order.php'" class="brk-btn">Online store currently closed</button>
   </div>
 
 </section>
@@ -240,21 +240,22 @@ function topFunction() {
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
       <div class="footer-left">
 
-        <h3>Company<span>logo</span></h3>
-
+  <div class="logoDiv">
+        <img src="https://ethimox.s3.us-east-2.amazonaws.com/ethimoX-03+(1).png" width="65px" height="50px">
+    </div>
         <p class="footer-links">
           <a href="#">Home</a>
           ·
-          <a href="#">Products</a>
+         <!-- <a href="#">Products</a>
           ·
           <a href="#">Services</a>
-          ·
+          ·-->
           <a href="#">Contact</a>
           
 
         </p>
 
-        <p class="footer-company-name">Company Name &copy; 2019</p>
+        <p class="footer-company-name">ethimoX &copy; 2019</p>
       </div>
 
       <div class="footer-center">
@@ -264,14 +265,10 @@ function topFunction() {
           <p><span>PO BOX 55035</span> Atlanta, Ga 30308</p>
         </div>
 
-        <div>
-          <i class="fa fa-phone"></i>
-          <p>404-901-0484</p>
-        </div>
 
         <div>
           <i class="fa fa-envelope"></i>
-          <p><a href="mailto:support@inlivery.com">support@offguadpics.com</a></p>
+          <p><a href="mailto:support@inlivery.com">ethimox@gmail.com</a></p>
         </div>
 
       </div>
@@ -280,15 +277,16 @@ function topFunction() {
 
         <p class="footer-company-about">
           <span>About the company</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+          Get any design you want on any one of products. Good for any occasion. 
         </p>
 
         <div class="footer-icons">
 
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-pinterest"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.facebook.com/ethimox"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/ethimox/"><i class="fa fa-instagram"></i></a>
+         <!-- <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-pinterest"></i></a>-->
+          
 
         </div>
 

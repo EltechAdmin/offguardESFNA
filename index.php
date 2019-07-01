@@ -1,7 +1,7 @@
 <?php
 //include file which will make mysqli connection, this functionality will likely need improvements
-include_once('/php/db.php');
-//include_once($_SERVER['DOCUMENT_ROOT'].'/offguard/php/db.php');
+//include_once('/php/db.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/ethimoX/php/db.php');
 
 //$sql = get_mysqli_connection();
 
@@ -120,7 +120,7 @@ function topFunction() {
           <a class="nav-link" href="#">Store (Closed)</a>
         </li>
        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="orders.html">Services</a>
         </li>-->
         <li class="nav-item">
           <a class="nav-link" href="contact.php">Contact</a>
@@ -131,6 +131,7 @@ function topFunction() {
 </nav>
 <header>
   <h1 class="sectionHeader">Any Design you want!!</h1>
+  <h3 class="sectionHeader2">Have it in 15 Minutes or less.</h3>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -233,7 +234,7 @@ function topFunction() {
 <section class="py-5">
   <div class="container">
     <h2 class="boothlocation">Booth Location</h2>
-    <p class="lead">######</a></p>
+    <p class="lead"># 43</a></p>
   </div>
 </section>
     <footer class="footer-distributed">
@@ -268,7 +269,7 @@ function topFunction() {
 
         <div>
           <i class="fa fa-envelope"></i>
-          <p><a href="mailto:support@inlivery.com">ethimox@gmail.com</a></p>
+          <p><a href="mailto:support@ethimox.com">support@ethimox.com</a></p>
         </div>
 
       </div>

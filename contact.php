@@ -70,6 +70,9 @@ function topFunction() {
           <a class="nav-link" href="#">Services</a>
         </li>-->
         <li class="nav-item">
+          <a class="nav-link" href="designs.php">Designs</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="contact.php">Contact</a>
         </li>
       </ul>

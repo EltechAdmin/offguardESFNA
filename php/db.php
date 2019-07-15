@@ -1,8 +1,8 @@
 <?php
-$host_name = "localhost";
+$host_name = "127.0.0.1";
 $database = "offguard"; // Change your database name
 $username = "root";          // Your database user id 
-$password = "password";          // Your password
+$password = "Magikarpw3d!tan";          // Your password
 
 //////// Do not Edit below /////////
 try {

@@ -352,19 +352,25 @@ cursor: pointer;
 
 
 
-.esfna{
+.centerDiv{
 
 text-align: center;
 }
-.esfnalogo{
+.exlogo{
 
 
-height: 170px;
+height: 140px;
 margin-bottom:2%;
 margin-top: 1.75%;
 
 }
+.exSample{
 
+
+height: 350px;
+margin-top: 1.75%;
+
+}
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .howitworks {

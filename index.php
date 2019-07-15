@@ -2,6 +2,7 @@
 //include file which will make mysqli connection, this functionality will likely need improvements
 //include_once('/php/db.php');
 include_once($_SERVER['DOCUMENT_ROOT'].'/ethimoX/php/db.php');
+//include_once($_SERVER['DOCUMENT_ROOT'].'/php/db.php');
 
 //$sql = get_mysqli_connection();
 
@@ -119,9 +120,9 @@ function topFunction() {
         <li class="nav-item">
           <a class="nav-link" href="#">Store (Closed)</a>
         </li>
-       <!-- <li class="nav-item">
-          <a class="nav-link" href="orders.html">Services</a>
-        </li>-->
+        <li class="nav-item">
+          <a class="nav-link" href="designs.php">Designs</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.php">Contact</a>
         </li>
@@ -131,7 +132,7 @@ function topFunction() {
 </nav>
 <header>
   <h1 class="sectionHeader">Any Design you want!!</h1>
-  <h3 class="sectionHeader2">Have it in 15 Minutes or less.</h3>
+  <h3 class="sectionHeader2">Have it in 20 Minutes or less.</h3>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -179,10 +180,10 @@ function topFunction() {
         </a>
   </div>
 </header>
-    <div class="esfna" >
-    <img src="img/esfnaLogo.png" alt="logo" class="esfnalogo" >
+    <div class="centerDiv" >
+    <img src="https://ethimox.s3.us-east-2.amazonaws.com/ethimoX-03+(1).png" alt="logo" class="exlogo" >
      </div>
-<!-- Page Content -->
+<!-- Page Content -->s
 <section class="py-5">
   <div class="container">
     <h1 class="section1">Start  your order now</h1>
@@ -233,8 +234,10 @@ function topFunction() {
 </div>
 <section class="py-5">
   <div class="container">
-    <h2 class="boothlocation">Booth Location</h2>
-    <p class="lead"># 43</a></p>
+    <h2 class="boothlocation">Example</h2>
+     <div class="centerDiv" >
+    <img src="https://ethimox.s3.us-east-2.amazonaws.com/design/Webp.net-gifmaker.gif" alt="logo" class="exSample" >
+     </div>
   </div>
 </section>
     <footer class="footer-distributed">

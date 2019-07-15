@@ -1514,7 +1514,7 @@ document.getElementById("Popular").click();
 <section class="py-5">
   <div class="container">
     <h1 class="section1">New designs coming soon</h1>
-    <p class="lead">We do not own the rights to some of the designs! They belong to independent artist that are not affiliated with ethimoX</a>!</p>
+    <p class="lead">We do not own the rights to some of the designs! They belong to independent artists that are not affiliated with ethimoX</a>!</p>
   </div>
 </section>
 

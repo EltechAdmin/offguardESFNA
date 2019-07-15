@@ -1,7 +1,7 @@
 <?php
 //include file which will make mysqli connection, this functionality will likely need improvements
 //include_once('/php/db.php');
-include_once($_SERVER['DOCUMENT_ROOT'].'/ethimoX/php/db.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/ethimox/php/db.php');
 //include_once($_SERVER['DOCUMENT_ROOT'].'/php/db.php');
 
 //$sql = get_mysqli_connection();

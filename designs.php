@@ -364,16 +364,16 @@ document.getElementById("Popular").click();
 
 <div class="container">
   <div id="grid" class="row my-shuffle-container">
-    <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["africa"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+    <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["text","popular"]' data-date-created="2017-04-30" data-title="Lake Walchen">
       <div class="picture-item__inner">
         <div class="aspect aspect--16x9">
           <div class="aspect__inner">
-            <img onclick="imageView(this);" id="1" src="https://ethimox.s3.us-east-2.amazonaws.com/design/ndebele-house.jpg" 
+            <img onclick="imageView(this);" id="1" src="https://ethimox.s3.us-east-2.amazonaws.com/design/antisocial.jpg" 
               alt="A deep blue lake sits in the middle of vast hills covered with evergreen trees" />
           </div>
         </div>
         <div class="picture-item__details">
-          <figcaption class="picture-item__title"><a rel="noopener">GoJo Bet</a></figcaption>
+          <figcaption class="picture-item__title"><a rel="noopener">Anti-Social Butterfly</a></figcaption>
           <p class="picture-item__tags hidden@xs">1</p>
         </div>
       </div>
@@ -509,7 +509,7 @@ document.getElementById("Popular").click();
 
 
 
-<figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["popular","icon"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+<figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["icon"]' data-date-created="2017-04-30" data-title="Lake Walchen">
       <div class="picture-item__inner">
         <div class="aspect aspect--16x9">
           <div class="aspect__inner">
@@ -566,7 +566,7 @@ document.getElementById("Popular").click();
       <div class="picture-item__inner">
         <div class="aspect aspect--16x9">
           <div class="aspect__inner">
-            <img onclick="imageView(this);" src="https://ethimox.s3.us-east-2.amazonaws.com/design/mj1.jpg"  
+            <img onclick="imageView(this);" src="https://ethimox.s3.us-east-2.amazonaws.com/design/MJ.jpg"  
               alt="A multi-level highway stack interchange in Puxi, Shanghai" />
           </div>
         </div>

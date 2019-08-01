@@ -60,10 +60,10 @@ else{
       .carousel-item {
 
   background: no-repeat center center scroll;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     /*  background-repeat: no-repeat;
     background-size: 100% 120%;*/
     min-height: 100%
@@ -131,8 +131,8 @@ function topFunction() {
   </div>
 </nav>
 <header>
-  <h1 class="sectionHeader">Any Custom Design You Want!</h1>
-  <h3 class="sectionHeader2">I mean, What can beat that?</h3>
+  <h1 class="sectionHeader">Any Design you want!!</h1>
+  <h3 class="sectionHeader2">Have it in 20 Minutes or less.</h3>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -142,24 +142,24 @@ function topFunction() {
     </ol>
     <div class="banner" role="listbox">
       <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image: url('https://ethimox.s3.us-east-2.amazonaws.com/siteInfo/banner.jpg')">
-     <!--   <div class="bannerinfo">
+      <div class="carousel-item active" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/s1.png')">
+        <div class="bannerinfo">
           <h2 class="display-4">Share and Create an Everlasting Memory With Us </h2>
           <p class="lead">Creating a custom printed memory using an everyday itmes of your choice </p>
-        </div>-->
+        </div>
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/s2.png')">
         <div class="bannerinfo">
-          <h2 class="display-4">Take your event experience to the next level</h2>
+          <h2 class="display-4">Finding Creative Ways To Make You Smile</h2>
           <p class="lead"> Get your photos taken in-front of a Green screen background </p>
         </div>
       </div>
       <!-- Slide Three - Set the background image for this slide in the line below   -->
-      <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/sr4.jpg')">
+      <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/sr2.jpg')">
         <div class="bannerinfo">
-          <h2 class="display-4"> Unlimited Backgrounds of your choice</h2>
-       <!--    <p class="lead">Including any prefered background of your choice.</p>-->
+          <h2 class="display-4"> With a Multiple Backgrounds </h2>
+          <p class="lead">Including any prefered background of your choice.</p>
         </div>
       </div>
   <!-- Slide four - Set the background image for this slide in the line below -->
@@ -272,7 +272,7 @@ function topFunction() {
 
         <div>
           <i class="fa fa-envelope"></i>
-          <p><a href="mailto:support@ethimox.com">ethimox@gmail.com</a></p>
+          <p><a href="mailto:support@ethimox.com">support@ethimox.com</a></p>
         </div>
 
       </div>

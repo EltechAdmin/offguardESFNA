@@ -118,7 +118,7 @@ function topFunction() {
               </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Store (Closed)</a>
+          <a class="nav-link" href="store.php">Store (Closed)</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="designs.php">Designs</a>

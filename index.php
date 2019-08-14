@@ -38,50 +38,21 @@ else{
 ?>
 
 
-
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
   <title>ethimoX</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="googlebot" content="noindex, nofollow">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel='stylesheet' type='text/css' href='css/sections.css'/>
-  <link rel='stylesheet' type='text/css' href='css/bootstrap.css'/>
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-     <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
-      <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
-  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-  <style id="compiled-css" type="text/css">
-      .carousel-item {
 
-  background: no-repeat center center scroll;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-    /*  background-repeat: no-repeat;
-    background-size: 100% 120%;*/
-    min-height: 100%
-}
-
-  </style>
-
-
+  <link rel='stylesheet' type='text/css' href='css/store.css'/>
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    
   <!-- TODO: Missing CoffeeScript 2 -->
 
   <script type="text/javascript">
-
-
-    window.onload=function(){
-      
-
-
-    }
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -99,148 +70,67 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
 </script>
 
 </head>
-<body>
-    <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.php">ethimoX</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="store.php">Store (Closed)</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="designs.php">Designs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.php">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<header>
-  <h1 class="sectionHeader">Any Custom Design You Want!</h1>
-  <h3 class="sectionHeader2">I mean, What can beat that?</h3>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    </ol>
-    <div class="banner" role="listbox">
-      <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image: url('https://ethimox.s3.us-east-2.amazonaws.com/siteInfo/banner.jpg')">
-     <!--   <div class="bannerinfo">
-          <h2 class="display-4">Share and Create an Everlasting Memory With Us </h2>
-          <p class="lead">Creating a custom printed memory using an everyday itmes of your choice </p>
-        </div>-->
-      </div>
-      <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/s2.png')">
-        <div class="bannerinfo">
-          <h2 class="display-4">Take your event experience to the next level</h2>
-          <p class="lead"> Get your photos taken in-front of a Green screen background </p>
-        </div>
-      </div>
-      <!-- Slide Three - Set the background image for this slide in the line below   -->
-      <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/sr4.jpg')">
-        <div class="bannerinfo">
-          <h2 class="display-4"> Unlimited Backgrounds of your choice</h2>
-       <!--    <p class="lead">Including any prefered background of your choice.</p>-->
-        </div>
-      </div>
-  <!-- Slide four - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/sr3.png')">
-        <div class="bannerinfo">
-          <h2 class="display-4">Various Items</h2>
-          <p class="lead">Select one of our items to print your face on.</p>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-  </div>
+<header class="header">
+  <a href="index.php" class="logo">ethimoX</a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="index.php">Home</a></li>
+    <li><a href="designs.php">Designs</a></li>
+    <li><a href="events.php">Events</a></li>
+    <li><a href="contact.php">Contact</a></li>
+  </ul>
 </header>
-    <div class="centerDiv" >
-    <img src="https://ethimox.s3.us-east-2.amazonaws.com/ethimoX-03+(1).png" alt="logo" class="exlogo" >
-     </div>
-<!-- Page Content -->s
+
+
+<body >    <!-- Navigation -->
+
+<div class="store">
+
+
+
+
+
+<div data-layout="BIG_ICON_DETAILS_SUBTOTAL" class="ec-cart-widget"></div>
+<div><script data-cfasync="false" type="text/javascript"
+src="https://app.ecwid.com/script.js?17537199&data_platform=code" 
+charset="utf-8"></script><script>Ecwid.init();</script></div>
+
+
+<div class="search" id="my-search-17537199"></div>
+<div>
+<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?17537199&data_platform=code&data_date=2019-08-09" charset="utf-8"></script>
+<script type="text/javascript"> xSearch("id=my-search-17537199"); </script>
+</div>
+<!--
+<div id="my-categories-17537199"> </div> <div> <script type="text/javascript" src="https://app.ecwid.com/script.js?17537199&data_platform=code" charset="utf-8"></script> <script type="text/javascript"> xCategoriesV2("id=my-categories-17537199");</script> </div>
+-->
+<div id="my-store-17537199"></div>
+<div>
+<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?17537199&data_platform=code&data_date=2019-08-08" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-17537199");</script>
+</div>
+
+
+</div>
+
+
+
+<br>
+<br>
+<!--
 <section class="py-5">
   <div class="container">
-    <h1 class="section1">Start  your order now</h1>
-    <p class="lead">Click 'Get Started' below and follow the instructions to place your order to create a life time memory of this historical event.</a>!</p>
-          <button disabled="disabled" onclick="location.href ='order.php'" class="brk-btn">Online store currently closed</button>
+    <h1 class="section1">New designs coming soon</h1>
+    <p class="lead">We do not own the rights to some of the designs! They belong to independent artists that are not affiliated with ethimoX</a>!</p>
   </div>
-
-</section>
-
-
-<section class="py-5">
-  <div class="container">
-    <h1 class="section1">How it works</h1>
-    <p class="lead">Get your picture taken with our professional photographers, select a background/filter and choose an item you would like to see your face on. follow our easy 3 step process to make your selection and place an order</a>!</p>
-  </div>
-</section>
-
-<div class="howitworks">
-<div class="col-sm-12 col-md-4 col-lg-4 re-mt-30">
-<div class="iq-Work-box text-center">
-<div class="Work-icon">
-<i aria-hidden="true" class="step2"></i>
-<div class="line"></div>
-</div>
-<h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Customize Your Order</h4>
-<p> Pick from our pre-selected backgrounds or email us a background you would like us to use at extra cost.<br> You Can Have Your Order Custom Made On a Photo Paper, Shirt,Hat and More. </p>
-</div>
-</div>  
-<div class="col-sm-12 col-md-4 col-lg-4">
-<div class="iq-Work-box text-center">
-<div class="Work-icon">
-<i aria-hidden="true" class="step1"></i>
-<div class="line"></div>
-</div>
-<h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Say Cheese</h4>
-<p> Gather Your Loved Ones and Get Your Photos Taken In-Front Of Our Lighted Green Screen and Share The Moment Through Our Lense. </p>
-</div>
-</div>
-<div class="col-sm-12 col-md-4 col-lg-4 re-mt-30">
-<div class="iq-Work-box text-center">
-<div class="Work-icon">
-<i aria-hidden="true" class="step3"></i>
-</div>
-<h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Pick Up Your Memory</h4>
-<p> You don't want to stand around and wait? well, you don't have to. You Can Recieve a Text Notification When Your ORDER is ready.</p>
-</div>
-</div>
-</div>
-<section class="py-5">
-  <div class="container">
-    <h2 class="boothlocation">Example</h2>
-     <div class="centerDiv" >
-    <img src="https://ethimox.s3.us-east-2.amazonaws.com/design/Webp.net-gifmaker.gif" alt="logo" class="exSample" >
-     </div>
-  </div>
-</section>
-    <footer class="footer-distributed">
+</section>-->
+ <footer class="footer-distributed">
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
       <div class="footer-left">
 
@@ -272,7 +162,7 @@ function topFunction() {
 
         <div>
           <i class="fa fa-envelope"></i>
-          <p><a href="mailto:support@ethimox.com">ethimox@gmail.com</a></p>
+          <p><a href="mailto:support@ethimox.com">support@ethimox.com</a></p>
         </div>
 
       </div>
@@ -281,7 +171,7 @@ function topFunction() {
 
         <p class="footer-company-about">
           <span>About the company</span>
-          Get any design you want on any one of products. Good for any occasion. 
+          Get any design you want on any one of our products. Good for any occasion. 
         </p>
 
         <div class="footer-icons">

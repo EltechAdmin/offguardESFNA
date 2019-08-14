@@ -64,13 +64,10 @@ function topFunction() {
               </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Store (Closed)</a>
-        </li>
-       <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>-->
-        <li class="nav-item">
           <a class="nav-link" href="designs.php">Designs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.php">Events</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.php">Contact</a>
@@ -206,7 +203,7 @@ function topFunction() {
 
         <div>
           <i class="fa fa-envelope"></i>
-          <p><a href="mailto:support@inlivery.com">ethimox@gmail.com</a></p>
+          <p><a href="mailto:support@inlivery.com">support@ethimox.com</a></p>
         </div>
 
       </div>
@@ -215,7 +212,7 @@ function topFunction() {
 
         <p class="footer-company-about">
           <span>About the company</span>
-          Get any design you want on any one of products. Good for any occasion. 
+          Get any design you want on any one of our products. Good for any occasion. 
         </p>
 
         <div class="footer-icons">

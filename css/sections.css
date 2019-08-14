@@ -3,6 +3,9 @@ html, body {
     height: 100%;
 }
 
+
+
+
 .section1 {
 text-align: center;
     font-size: .5rem;
@@ -500,8 +503,9 @@ h4 {
 
 
 .logoDiv{
-    float: left;
+  
     margin-top: 7px;
+    margin-left: -10px;
 
 }
 

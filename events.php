@@ -1,44 +1,3 @@
-<?php
-//include file which will make mysqli connection, this functionality will likely need improvements
-//include_once('/php/db.php');
-include_once($_SERVER['DOCUMENT_ROOT'].'/ethimox/php/db.php');
-//include_once($_SERVER['DOCUMENT_ROOT'].'/php/db.php');
-
-//$sql = get_mysqli_connection();
-
-$ref=@$_SERVER[HTTP_REFERER];
-$agent=@$_SERVER[HTTP_USER_AGENT];
-$ip=@$_SERVER['REMOTE_ADDR'];
-$tracking_page_name2 = $_SERVER["SCRIPT_NAME"];
-$orderNumber = $_SERVER["REQUEST_TIME"];
-
-//if(strlen($ref) > 2 and !(stristr($ref,"localhost"))){  // exclude referrer from your own site. 
-$strSQL = "INSERT INTO track( ref, agent, ip, tracking_page_name) VALUES (:ref,:agent,:ip,:tracking_page_name)";
-
-$sql=$dbo->prepare($strSQL);
-
-$sql->bindParam(':ref',$ref);
-$sql->bindParam(':agent',$agent);
-$sql->bindParam(':ip',$ip);
-$sql->bindParam(':tracking_page_name',$tracking_page_name2);
-
-
-if($sql->execute()){
-// Part of the code to execute after successful execution of query
-
-//echo " Success ";
-}
-else{ 
-// Part of the code to execute if query fails ///
-//echo print_r($sql->errorInfo()); 
-}
-///////////// inserted details 
-//}
-
-?>
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,10 +19,10 @@ else{
       .carousel-item {
 
   background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
     /*  background-repeat: no-repeat;
     background-size: 100% 120%;*/
     min-height: 100%
@@ -113,15 +72,15 @@ function topFunction() {
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home
+          <a class="nav-link" href="index.php">Home
                 <span class="sr-only">(current)</span>
               </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Store (Closed)</a>
+          <a class="nav-link" href="designs.php">Designs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="designs.php">Designs</a>
+          <a class="nav-link" href="events.php">Events</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.php">Contact</a>
@@ -131,8 +90,8 @@ function topFunction() {
   </div>
 </nav>
 <header>
-  <h1 class="sectionHeader">Any Design you want!!</h1>
-  <h3 class="sectionHeader2">Have it in 20 Minutes or less.</h3>
+  <h1 class="sectionHeader">Any Custom Design You Want!</h1>
+  <h3 class="sectionHeader2">What can beat that?</h3>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -142,24 +101,24 @@ function topFunction() {
     </ol>
     <div class="banner" role="listbox">
       <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/s1.png')">
-        <div class="bannerinfo">
+      <div class="carousel-item active" style="background-image: url('https://ethimox.s3.us-east-2.amazonaws.com/siteInfo/banner.jpg')">
+     <!--   <div class="bannerinfo">
           <h2 class="display-4">Share and Create an Everlasting Memory With Us </h2>
           <p class="lead">Creating a custom printed memory using an everyday itmes of your choice </p>
-        </div>
+        </div>-->
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/s2.png')">
         <div class="bannerinfo">
-          <h2 class="display-4">Finding Creative Ways To Make You Smile</h2>
+          <h2 class="display-4">Take your event experience to the next level</h2>
           <p class="lead"> Get your photos taken in-front of a Green screen background </p>
         </div>
       </div>
       <!-- Slide Three - Set the background image for this slide in the line below   -->
-      <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/sr2.jpg')">
+      <div class="carousel-item" style="background-image: url('https://s3.us-east-2.amazonaws.com/offguard/sr4.jpg')">
         <div class="bannerinfo">
-          <h2 class="display-4"> With a Multiple Backgrounds </h2>
-          <p class="lead">Including any prefered background of your choice.</p>
+          <h2 class="display-4"> Unlimited Backgrounds of your choice</h2>
+       <!--    <p class="lead">Including any prefered background of your choice.</p>-->
         </div>
       </div>
   <!-- Slide four - Set the background image for this slide in the line below -->
@@ -188,7 +147,7 @@ function topFunction() {
   <div class="container">
     <h1 class="section1">Start  your order now</h1>
     <p class="lead">Click 'Get Started' below and follow the instructions to place your order to create a life time memory of this historical event.</a>!</p>
-          <button disabled="disabled" onclick="location.href ='order.php'" class="brk-btn">Online store currently closed</button>
+          <button disabled="disabled" onclick="location.href ='order.php'" class="brk-btn">Event store currently closed</button>
   </div>
 
 </section>
@@ -281,7 +240,7 @@ function topFunction() {
 
         <p class="footer-company-about">
           <span>About the company</span>
-          Get any design you want on any one of products. Good for any occasion. 
+          Get any design you want on any one of our products. Good for any occasion. 
         </p>
 
         <div class="footer-icons">

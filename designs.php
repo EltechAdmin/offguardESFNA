@@ -23,10 +23,12 @@
   <!-- TODO: Missing CoffeeScript 2 -->
 
   <script type="text/javascript">
-
+function myFunction() {
+document.getElementById("Popular").click();
+}
 
     window.onload=function(){
-      
+      document.getElementById("Popular").click();
 
     }
     function div_hide(){
@@ -273,9 +275,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-function myFunction() {
-document.getElementById("Popular").click();
-}
+
 </script>
 
 </head>
@@ -295,13 +295,10 @@ document.getElementById("Popular").click();
               </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Store (Closed)</a>
-        </li>
-       <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>-->
-          <li class="nav-item">
           <a class="nav-link" href="designs.php">Designs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.php">Events</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.php">Contact</a>
@@ -1550,7 +1547,7 @@ document.getElementById("Popular").click();
 
         <div>
           <i class="fa fa-envelope"></i>
-          <p><a href="mailto:support@inlivery.com">ethimox@gmail.com</a></p>
+          <p><a href="mailto:support@inlivery.com">support@ethimox.com</a></p>
         </div>
 
       </div>
@@ -1559,7 +1556,7 @@ document.getElementById("Popular").click();
 
         <p class="footer-company-about">
           <span>About the company</span>
-          Get any design you want on any one of products. Good for any occasion. 
+          Get any design you want on any one of our products. Good for any occasion. 
         </p>
 
         <div class="footer-icons">

@@ -15,7 +15,8 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
      <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
       <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+       <link rel="icon" href="https://ethimox.s3.us-east-2.amazonaws.com/ethimoX-03+(1).png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
@@ -576,7 +577,7 @@ function topFunction() {
     <figure class="col-6@xs col-8@sm col-6@md picture-item picture-item--overlay" data-groups='["icon"]' data-date-created="2016-06-29" data-title="Milky Way">
       <div class="picture-item__inner">
 
-        <img onclick="imageView(this);" src="https://ethimox.s3.us-east-2.amazonaws.com/design/mj2.jpg"
+        <img onclick="imageView(this);" src="https://ethimox.s3.us-east-2.amazonaws.com/design/mj3.jpg"
           alt="Dimly lit mountains give way to a starry night showing the Milky Way" />
         <div class="picture-item__details">
           <figcaption class="picture-item__title"><a  rel="noopener">Michael Jackson</a></figcaption>

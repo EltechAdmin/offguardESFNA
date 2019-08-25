@@ -46,9 +46,9 @@ else{
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="icon" href="https://ethimox.s3.us-east-2.amazonaws.com/ethimoX-03+(1).png">
   <link rel='stylesheet' type='text/css' href='css/store.css'/>
- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     
   <!-- TODO: Missing CoffeeScript 2 -->
 
@@ -74,12 +74,13 @@ function topFunction() {
 
 
 </script>
-
 </head>
+
 <header class="header">
   <a href="index.php" class="logo">ethimoX</a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
   <ul class="menu">
     <li><a href="index.php">Home</a></li>
     <li><a href="designs.php">Designs</a></li>
@@ -94,13 +95,11 @@ function topFunction() {
 <div class="store">
 
 
-
-
-
 <div data-layout="BIG_ICON_DETAILS_SUBTOTAL" class="ec-cart-widget"></div>
 <div><script data-cfasync="false" type="text/javascript"
 src="https://app.ecwid.com/script.js?17537199&data_platform=code" 
 charset="utf-8"></script><script>Ecwid.init();</script></div>
+
 
 
 <div class="search" id="my-search-17537199"></div>
@@ -111,6 +110,12 @@ charset="utf-8"></script><script>Ecwid.init();</script></div>
 <!--
 <div id="my-categories-17537199"> </div> <div> <script type="text/javascript" src="https://app.ecwid.com/script.js?17537199&data_platform=code" charset="utf-8"></script> <script type="text/javascript"> xCategoriesV2("id=my-categories-17537199");</script> </div>
 -->
+
+<div class="banner">
+<script src="https://cdn.onlymega.com/cjzqglwit00165mpdndakv5u3/embed.js?responsive=1&bnTag=" async></script>
+</div>
+
+
 <div id="my-store-17537199"></div>
 <div>
 <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?17537199&data_platform=code&data_date=2019-08-08" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-17537199");</script>

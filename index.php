@@ -74,7 +74,7 @@ function topFunction() {
 
 
 function hidebanner() {
-        if (window.location.href == window.location.protocol+"//"+window.location.hostname+"/ethimoX/index.php") {
+        if (window.location.href == window.location.protocol+"//"+window.location.hostname+"/ethimoX/") {
             document.getElementById("banner").style.display = "block";
 
       } else {
@@ -93,7 +93,7 @@ function hidebanner() {
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
   <ul class="menu">
-    <li><a href="index.php">Home</a></li>
+    <li><a href="">Home</a></li>
     <li><a href="designs.php">Designs</a></li>
     <li><a href="events.php">Events</a></li>
     <li><a href="contact.php">Contact</a></li>

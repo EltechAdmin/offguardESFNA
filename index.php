@@ -56,6 +56,7 @@ else{
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
+window.onhashchange = function() {hidebanner();};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -71,6 +72,16 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+
+function hidebanner() {
+        if (window.location.href == window.location.protocol+"//"+window.location.hostname+"/ethimoX/index.php") {
+            document.getElementById("banner").style.display = "block";
+
+      } else {
+           document.getElementById("banner").style.display = "none";
+
+      }
+}
 
 
 </script>
@@ -90,7 +101,7 @@ function topFunction() {
 </header>
 
 
-<body >    <!-- Navigation -->
+<body>    <!-- Navigation -->
 
 <div class="store">
 
@@ -111,7 +122,7 @@ charset="utf-8"></script><script>Ecwid.init();</script></div>
 <div id="my-categories-17537199"> </div> <div> <script type="text/javascript" src="https://app.ecwid.com/script.js?17537199&data_platform=code" charset="utf-8"></script> <script type="text/javascript"> xCategoriesV2("id=my-categories-17537199");</script> </div>
 -->
 
-<div class="banner">
+<div class="banner" id="banner">
 <script src="https://cdn.onlymega.com/cjzqglwit00165mpdndakv5u3/embed.js?responsive=1&bnTag=" async></script>
 </div>
 

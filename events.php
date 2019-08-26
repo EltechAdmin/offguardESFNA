@@ -12,7 +12,7 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
      <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
       <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-       <link rel="icon" href="https://ethimox.s3.us-east-2.amazonaws.com/ethimoX-03+(1).png">
+   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
@@ -66,14 +66,14 @@ function topFunction() {
     <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.php">ethimoX</a>
+    <a class="navbar-brand" href="/ethimoX">ethimoX</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.php">Home
+          <a class="nav-link" href="/ethimoX">Home
                 <span class="sr-only">(current)</span>
               </a>
         </li>

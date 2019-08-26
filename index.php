@@ -32,7 +32,7 @@ else{
 // Part of the code to execute if query fails ///
 //echo print_r($sql->errorInfo()); 
 }
-///////////// inserted details 
+///////////// inserted details <link rel="icon" href="/favicon.ico" type="image/x-icon">
 //}
 
 ?>
@@ -46,7 +46,7 @@ else{
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="https://ethimox.s3.us-east-2.amazonaws.com/ethimoX-03+(1).png">
+  <link rel="icon" href="favicon.ico">
   <link rel='stylesheet' type='text/css' href='css/store.css'/>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     
@@ -88,7 +88,7 @@ function hidebanner() {
 </head>
 
 <header class="header">
-  <a href="index.php" class="logo">ethimoX</a>
+  <a href="" class="logo">ethimoX</a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 

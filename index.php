@@ -46,13 +46,24 @@ else{
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel='stylesheet' type='text/css' href='css/store.css'/>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     
   <!-- TODO: Missing CoffeeScript 2 -->
 
   <script type="text/javascript">
+
+    function hidebanner() {
+        if (window.location.href == window.location.protocol+"//"+window.location.hostname+"/") {
+            document.getElementById("banner").style.display = "block";
+      } else {
+           document.getElementById("banner").style.display = "none";
+      }
+}
+
+
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -71,18 +82,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-
-function hidebanner() {
-        if (window.location.href == window.location.protocol+"//"+window.location.hostname+"/ethimoX/") {
-            document.getElementById("banner").style.display = "block";
-
-      } else {
-           document.getElementById("banner").style.display = "none";
-
-      }
-}
-
 
 </script>
 </head>
